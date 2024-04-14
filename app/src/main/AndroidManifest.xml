@@ -13,16 +13,26 @@
         android:theme="@style/Theme.ExpenseManager"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".SignUp"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.ExpenseManager.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".SignIn"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.ExpenseManager.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>
