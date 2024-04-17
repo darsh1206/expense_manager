@@ -3,14 +3,7 @@
     android:height="24dp"
     android:viewportWidth="24.0"
     android:viewportHeight="24.0">
-
-    <!-- Roof -->
     <path
         android:fillColor="#FF000000"
-        android:pathData="M12,2L3,10.5v11.5h6v-7h6v7h6V10.5L12,2z" />
-
-    <!-- Walls -->
-    <path
-        android:fillColor="#FF000000"
-        android:pathData="M19,13.73v7.77h-4v-5h-6v5H5v-7.77l7,-5.5z" />
+        android:pathData="M12,2c2.21,0 4,1.79 4,4s-1.79,4 -4,4 -4,-1.79 -4,-4 1.79,-4 4,-4zm0,16c-2.67,0 -8,1.34 -8,4v2h16v-2c0,-2.66 -5.33,-4 -8,-4z"/>
 </vector>
