@@ -37,7 +37,7 @@
             >
 
             <TextView
-                android:id="@+id/signin"
+                android:id="@+id/signin_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
@@ -53,7 +53,7 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/username_layout"
-                    android:layout_below="@+id/signin"
+                    android:layout_below="@+id/signin_title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
@@ -95,14 +95,14 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <Button
-                    android:id="@+id/login"
+                    android:id="@+id/signin_btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/forget"
                     android:layout_centerHorizontal="true"
                     android:layout_marginBottom="5dp"
                     android:backgroundTint="@color/design_default_color_on_secondary"
-                    android:text="Signin" />
+                    android:text="Sign in" />
 
             <Button
                 android:id="@+id/forget"

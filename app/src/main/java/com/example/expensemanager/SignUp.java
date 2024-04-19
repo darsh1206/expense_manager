@@ -16,6 +16,8 @@ import com.google.android.material.textfield.TextInputLayout;
 
 import java.util.Objects;
 
+import javax.mail.MessagingException;
+
 public class SignUp extends AppCompatActivity {
     private Button signin;
     private Button signup;
