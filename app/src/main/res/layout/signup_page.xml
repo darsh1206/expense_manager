@@ -61,7 +61,7 @@
                 app:hintEnabled="true"
                 app:boxBackgroundColor="@color/white"
                 app:endIconMode="custom"
-                app:endIconDrawable="@drawable/username"
+                app:endIconDrawable="@drawable/ic_username"
                 app:errorEnabled="true">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -84,7 +84,7 @@
                 app:hintEnabled="true"
                 app:boxBackgroundColor="@color/white"
                 app:endIconMode="custom"
-                app:endIconDrawable="@drawable/email"
+                app:endIconDrawable="@drawable/ic_email"
                 app:errorEnabled="true">
 
                 <com.google.android.material.textfield.TextInputEditText
