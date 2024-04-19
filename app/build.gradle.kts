@@ -52,5 +52,6 @@ dependencies {
     implementation("io.github.chaosleung:pinview:1.4.4")
     implementation ("com.sun.mail:android-mail:1.6.6")
     implementation ("com.sun.mail:android-activation:1.6.6")
+    implementation ("de.hdodenhof:circleimageview:3.1.0")
 
 }
