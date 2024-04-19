@@ -63,7 +63,7 @@
                     app:hintEnabled="true"
                     app:boxBackgroundColor="@color/white"
                     app:endIconMode="custom"
-                    app:endIconDrawable="@drawable/username"
+                    app:endIconDrawable="@drawable/ic_username"
                     >
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
