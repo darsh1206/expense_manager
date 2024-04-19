@@ -4,4 +4,7 @@
         <item name="android:background">@drawable/shadow_box</item>
         <item name="android:elevation">8dp</item> <!-- Shadow elevation -->
     </style>
+    <style name="image">
+        <item name="android:elevation">20dp</item>
+    </style>
 </resources>
