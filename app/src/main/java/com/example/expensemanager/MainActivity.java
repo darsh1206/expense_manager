@@ -1,9 +1,11 @@
 package com.example.expensemanager;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
@@ -23,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
     private FloatingActionButton add;
+    private ImageView editProfile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +53,15 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
 
+        editProfile = binding.appBarMain.btnEditProfile;
+
+        editProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, edit_profile.class);
+                startActivity(intent);
+            }
+        });
         add = findViewById(R.id.fab);
         add.setOnClickListener(new View.OnClickListener() {
             @Override
