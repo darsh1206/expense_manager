@@ -63,6 +63,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".FriendsGroupActivity" />
+        <activity android:name=".OfficeGroupActivity" />
+
 
     </application>
     <uses-permission android:name="android.permission.INTERNET" />

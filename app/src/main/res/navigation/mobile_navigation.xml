@@ -28,4 +28,6 @@
         android:name="com.example.expensemanager.ui.Profile.ProfilePageFragment"
         android:label="Slideshow"
         tools:layout="@layout/profile_page" />
+
+
 </navigation>

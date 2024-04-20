@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -38,7 +39,8 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:padding="16dp"
-        android:background="@drawable/group_info_background">
+        android:clickable="true"
+        android:background="@drawable/shadow_box2">
 
         <!-- Group Image -->
         <ImageView
@@ -46,6 +48,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:src="@drawable/bird_2"
+            android:background="@drawable/rounded_image_background"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             android:scaleType="centerCrop" />
@@ -56,7 +59,9 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Friends"
-            android:textSize="18sp"
+            android:textSize="20sp"
+            android:textColor="@color/purple_500"
+            android:textStyle="bold"
             app:layout_constraintTop_toTopOf="@id/image_group"
             app:layout_constraintStart_toEndOf="@id/image_group"
             app:layout_constraintEnd_toEndOf="parent"
@@ -69,6 +74,9 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="50$ owe"
+            android:textSize="18sp"
+            android:textColor="@color/purple_500"
+            android:textStyle="bold"
             app:layout_constraintTop_toBottomOf="@id/text_group_name"
             app:layout_constraintStart_toEndOf="@id/image_group"
             app:layout_constraintEnd_toEndOf="parent"
@@ -78,6 +86,64 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <!-- Floating Action Button (Add New Group) -->
+    <!-- RecyclerView for Group Boxes -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/group_info_container2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/shadow_box2"
+        android:clickable="true"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <!-- Group Image -->
+        <ImageView
+            android:id="@+id/image_group2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/rounded_image_background"
+            android:scaleType="centerCrop"
+            android:src="@drawable/group_image_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Group Name -->
+        <TextView
+            android:id="@+id/text_group_name2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Office"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/image_group2"
+            app:layout_constraintTop_toTopOf="@id/image_group2" />
+
+        <!-- Amount Owed -->
+        <TextView
+            android:id="@+id/text_amount_owed2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="1050$ owe"
+            android:textColor="@color/purple_500"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/image_group2"
+            app:layout_constraintTop_toBottomOf="@id/text_group_name2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
