@@ -1,6 +1,241 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Navigation Bar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/purple_200"
+        app:title="Friends"
+        app:titleTextColor="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Month -->
+
+
+    <!-- Box with Purple Border -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/group_info_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shadow_box2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:padding="16dp">
+
+        <!-- Bird Image -->
+        <ImageView
+            android:id="@+id/image_bird"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/bird_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Group Members -->
+        <TextView
+            android:id="@+id/text_group_members"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12 group members"
+            android:textSize="18sp"
+            android:textColor="@color/purple_500"
+            app:layout_constraintStart_toEndOf="@id/image_bird"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Total Owe -->
+        <TextView
+            android:id="@+id/text_total_owe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Owe 50%"
+            android:textSize="18sp"
+            android:textColor="@color/purple_500"
+            app:layout_constraintStart_toEndOf="@id/image_bird"
+            app:layout_constraintTop_toBottomOf="@id/text_group_members"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- April 2024 -->
+    <TextView
+        android:id="@+id/text_april_2024"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="April 2024"
+        android:textSize="16sp"
+        android:textColor="@color/purple_500"
+        app:layout_constraintStart_toStartOf="@id/group_info_container"
+        app:layout_constraintTop_toBottomOf="@id/group_info_container"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <!-- Empty Rectangle Box -->
+    <!-- Date -->
+    <!-- Empty Rectangle Box -->
+    <View
+        android:id="@+id/empty_rectangle"
+        android:layout_width="376dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shadow_box2"
+        app:layout_constraintStart_toStartOf="@id/text_april_2024"
+        app:layout_constraintTop_toBottomOf="@id/text_april_2024" />
+
+    <TextView
+        android:id="@+id/text_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="19"
+        android:textSize="20sp"
+        android:textColor="@color/purple_500"
+        app:layout_constraintStart_toStartOf="@id/empty_rectangle"
+        app:layout_constraintTop_toTopOf="@id/empty_rectangle"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/text_money_symbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$"
+        android:textSize="20sp"
+        android:textColor="@color/purple_500"
+        app:layout_constraintStart_toEndOf="@id/text_date"
+        app:layout_constraintTop_toTopOf="@id/text_date"
+        android:layout_marginStart="8dp" />
+
+    <TextView
+        android:id="@+id/text_royal_paan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Royal Paan"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/purple_500"
+        app:layout_constraintStart_toEndOf="@id/text_money_symbol"
+        app:layout_constraintTop_toTopOf="@id/text_date"
+        android:layout_marginStart="8dp" />
+
+    <TextView
+        android:id="@+id/text_borrowed_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12$ borrowed"
+        android:textSize="16sp"
+        android:textColor="@color/purple_500"
+        app:layout_constraintBaseline_toBaselineOf="@id/text_royal_paan"
+        app:layout_constraintStart_toEndOf="@id/text_royal_paan"
+        android:layout_marginStart="8dp" />
+
+    <View
+        android:id="@+id/empty_rectangle_2"
+        android:layout_width="376dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shadow_box2"
+        app:layout_constraintStart_toStartOf="@id/text_april_2024"
+        app:layout_constraintTop_toBottomOf="@id/empty_rectangle" />
+
+    <TextView
+        android:id="@+id/text_date_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="18"
+        android:textColor="@color/purple_500"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/empty_rectangle_2"
+        app:layout_constraintTop_toTopOf="@id/empty_rectangle_2"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/text_money_symbol_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$"
+        android:textSize="20sp"
+        android:textColor="@color/purple_500"
+        app:layout_constraintStart_toEndOf="@id/text_date_2"
+        app:layout_constraintTop_toTopOf="@id/text_date_2"
+        android:layout_marginStart="8dp" />
+
+
+    <!-- Royal Paan 2 -->
+
+    <!-- Borrowed Amount 2 -->
+
+
+    <!-- Bottom Bar -->
+
+    <TextView
+        android:id="@+id/text_royal_paan_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="Freshco"
+        android:textColor="@color/purple_500"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/text_money_symbol_2"
+        app:layout_constraintTop_toTopOf="@id/text_date_2" />
+
+    <TextView
+        android:id="@+id/text_borrowed_amount_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:text="150$ paid"
+        android:textColor="@color/purple_500"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/text_royal_paan_2"
+        app:layout_constraintStart_toEndOf="@id/text_royal_paan_2" />
+
+    <Button
+        android:id="@+id/btn_add_expenses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="368dp"
+        android:background="@drawable/shadow_box2"
+        android:padding="16dp"
+        android:text="Add expenses"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.818"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/group_info_container" />
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/purple_500"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <!-- Total Expense Text -->
+        <TextView
+            android:id="@+id/text_total_expense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Expense = 200$"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

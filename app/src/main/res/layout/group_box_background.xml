@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/group_info_background"
+    android:background="@drawable/shadow_box2"
     android:padding="16dp"
     android:layout_marginTop="16dp"
     android:layout_marginStart="16dp"
@@ -14,9 +14,10 @@
     <!-- Group Image -->
     <ImageView
         android:id="@+id/image_group"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:src="@drawable/bird_2"
+        android:background="@drawable/rounded_image_background"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:scaleType="centerCrop" />
@@ -27,7 +28,9 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Group Name"
-        android:textSize="18sp"
+        android:textSize="20sp"
+        android:textColor="@color/purple_500"
+        android:textStyle="bold"
         app:layout_constraintTop_toTopOf="@id/image_group"
         app:layout_constraintStart_toEndOf="@id/image_group"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,14 +43,14 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Amount Owed"
+        android:textSize="18sp"
+        android:textColor="@color/purple_500"
+        android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@id/text_group_name"
         app:layout_constraintStart_toEndOf="@id/image_group"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="8dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp" />
-
-    <!-- Add Friend Button -->
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
