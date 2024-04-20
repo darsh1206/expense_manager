@@ -16,6 +16,7 @@ public class AppDB extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         // Create tables
         db.execSQL(DBContract.UserEntry.CREATE_TABLE);
+        db.execSQL(DBContract.UserDetailsEntry.CREATE_TABLE);
         // Add more tables if needed
     }
 
@@ -23,6 +24,7 @@ public class AppDB extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         // Drop older tables if existed
         db.execSQL("DROP TABLE IF EXISTS " + DBContract.UserEntry.TABLE_NAME);
+        db.execSQL("DROP TABLE IF EXISTS " + DBContract.UserDetailsEntry.TABLE_NAME);
         // Create tables again
         onCreate(db);
     }

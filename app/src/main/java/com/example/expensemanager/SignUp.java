@@ -27,6 +27,7 @@ public class SignUp extends AppCompatActivity {
     TextInputEditText emailEditText;
     TextInputLayout passwordLayout;
     TextInputEditText passwordEditText;
+    DBDataSource dataSource;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,6 +45,8 @@ public class SignUp extends AppCompatActivity {
         usernameEditText = usernameLayout.findViewById(R.id.username);
         emailEditText = emailLayout.findViewById(R.id.email);
         passwordEditText = passwordLayout.findViewById(R.id.password);
+
+        dataSource = new DBDataSource(this);
         signin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -56,8 +59,10 @@ public class SignUp extends AppCompatActivity {
             public void onClick(View v) {
                 if(checkErrors()){
                     Log.d("A", "Signup successful");
-
+                    long userID = dataSource.insertUser(Objects.requireNonNull(usernameEditText.getText()).toString(), Objects.requireNonNull(emailEditText.getText()).toString(), Objects.requireNonNull(passwordEditText.getText()).toString());
+                    dataSource.insertUserDetails((int) userID, "", "", "", "", "");
                     Intent intent = new Intent(SignUp.this, VerifyUser.class);
+                    intent.putExtra("user_id", String.valueOf(userID));
                     startActivity(intent);
                 }
                 Log.d("A", "Signup failed");

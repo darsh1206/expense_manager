@@ -53,7 +53,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/berkshire_swash"
-                        android:text="Sanskar Tiwari"
+                        android:text="Darsh Patel"
                         android:textColor="@color/black"
                         android:textSize="30sp"
                         android:textStyle="bold" />
@@ -89,6 +89,7 @@
                 </LinearLayout>
 
                 <TextView
+                    android:id="@+id/aboutme"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -96,6 +97,7 @@
             </LinearLayout>
                 <!--Contact Details-->
                 <LinearLayout
+                    android:id="@+id/contact"
                     android:layout_below="@+id/about"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -137,6 +139,7 @@
                                 android:src="@drawable/ic_email" />
 
                             <TextView
+                                android:id="@+id/email"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="20dp"
@@ -168,6 +171,7 @@
                                 android:src="@drawable/ic_call" />
 
                             <TextView
+                                android:id="@+id/phone"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="20dp"
@@ -178,7 +182,206 @@
                         </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/personal"
+                    android:layout_below="@+id/contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/circular_border_solid"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Personal Details"
+                            android:textSize="17sp"
+                            android:fontFamily="@font/andika"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <!--Name-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingRight="8dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="Full Name"
+                                android:textSize="15sp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/andika" />
+
+                            <TextView
+                                android:id="@+id/fullname"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="Darsh Patel"
+                                android:textSize="15sp"
+                                android:textColor="@color/good_grey"
+                                android:fontFamily="@font/andika" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!--Age-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingRight="8dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="Birth Date"
+                                android:textSize="15sp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/andika" />
+
+                            <TextView
+                                android:id="@+id/birthdate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="12/04/2004"
+                                android:textSize="15sp"
+                                android:textColor="@color/good_grey"
+                                android:fontFamily="@font/andika" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!--Address-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingRight="8dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="Address"
+                                android:textSize="15sp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/andika" />
+
+                            <TextView
+                                android:id="@+id/address"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="300 Regina Street North"
+                                android:textSize="15sp"
+                                android:textColor="@color/good_grey"
+                                android:fontFamily="@font/andika" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!--City-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingRight="8dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="City"
+                                android:textSize="15sp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/andika" />
+
+                            <TextView
+                                android:id="@+id/city"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="Waterloo"
+                                android:textSize="15sp"
+                                android:textColor="@color/good_grey"
+                                android:fontFamily="@font/andika" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!--Country-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingRight="8dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="Country"
+                                android:textSize="15sp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/andika" />
+
+                            <TextView
+                                android:id="@+id/country"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="Canada"
+                                android:textSize="15sp"
+                                android:textColor="@color/good_grey"
+                                android:fontFamily="@font/andika" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
             </RelativeLayout>
+
         </LinearLayout>
 
 
